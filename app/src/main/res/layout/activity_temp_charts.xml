@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.jiemian.TempChartsActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout"
+        android:background="@drawable/beijing6">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="0.4">
+            <com.example.dell.jiemian.kongjian.temp
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/temp24">
+            </com.example.dell.jiemian.kongjian.temp>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/linearLayout"
+            android:layout_weight="0.1">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="前24小时体温数据表"
+                android:textColor="#ffffff"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.4">
+            <com.example.dell.jiemian.kongjian.temp60
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/temp60">
+            </com.example.dell.jiemian.kongjian.temp60>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="前60分钟体温数据表"
+                android:textColor="#ffffff"
+                android:textAlignment="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

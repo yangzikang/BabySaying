@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/beige"
+    android:weightSum="4">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_weight="0.3"
+    android:layout_height="0dp"
+    android:text="综合信息"
+    android:textSize="25dp"
+    android:textColor="#0E0E0E"
+    android:layout_gravity="center_horizontal" />
+    <FrameLayout
+        android:layout_weight="0.5"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/zong1"
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:weightSum="1">
+        <TextView
+            android:layout_width="80dp"
+            android:text="体温"
+            android:textSize="30dp"
+            android:textColor="#fff"
+            android:layout_height="42dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center" />
+            <TextView
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:text="体温38.5℃"
+                android:textSize="25dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:textColor="#595959"
+                android:id="@+id/temp" />
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_weight="0.5"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/zong2"
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="42dp"
+                android:text="心率"
+                android:textSize="30dp"
+                android:textColor="#fff"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:text="心率116次/分"
+                android:textSize="25dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:textColor="#595959"
+                android:id="@+id/heart" />
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_weight="0.5"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/zong3"
+        >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="42dp"
+                android:text="睡姿"
+                android:textSize="30dp"
+                android:textColor="#fff"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:text="仰卧睡姿"
+                android:textSize="25dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:textColor="#595959"
+                android:id="@+id/size" />
+        </LinearLayout>
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_weight="0.5"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/zong5"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="42dp"
+                android:text="状态"
+                android:textSize="30dp"
+                android:textColor="#fff"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="12dp"
+                android:gravity="center" />
+            <TextView
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:text="正常"
+                android:textSize="25dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:textColor="#595959" />
+        </LinearLayout>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_weight="1.1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/whatWarning">
+        <TextView
+            android:layout_width="266dp"
+            android:layout_height="70dp"
+            android:text="警报："
+            android:textColor="#E61911"
+            android:layout_marginBottom="20dp"
+            android:textSize="20dp"
+            android:layout_gravity="center_horizontal|top" />
+
+        <TextView
+            android:layout_width="264dp"
+            android:layout_height="80dp"
+            android:text="暂无报警"
+            android:lineSpacingExtra="3dp"
+            android:textColor="#E61911"
+            android:textSize="20dp"
+            android:layout_gravity="center_horizontal|center"
+            android:id="@+id/allmessage" />
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

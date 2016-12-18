@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/beijing13"
+    >
+
+
+        <TextView
+        android:id="@+id/iiii"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+            android:gravity="center"
+        android:keepScreenOn="true"
+        android:text="正在录制请等待..."
+        android:textColor="#33b5e5"
+        android:textSize="30dp"
+        android:textStyle="bold"
+            android:layout_below="@+id/jjjjjj"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:id="@+id/jjjjjj"
+            android:background="@android:drawable/ic_btn_speak_now"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

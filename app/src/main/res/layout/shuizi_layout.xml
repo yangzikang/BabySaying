@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/beijing12">
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
+        >
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/shuizi" />
+
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:background="@drawable/yinying"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="30dp" />
+
+        <TextView
+        android:layout_width="214dp"
+        android:layout_height="84dp"
+        android:text="姿态："
+        android:textSize="45dp"
+        android:textColor="#EEECE1"
+        android:layout_gravity="center_horizontal|bottom"
+            android:textIsSelectable="true" />
+
+        <TextView
+            android:layout_width="158dp"
+            android:layout_height="80dp"
+            android:text="仰卧"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:textColor="#EEECE1"
+            android:id="@+id/shuizitext"
+            android:layout_gravity="right|bottom" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="66dp"
+            android:text="姿态图表"
+            android:id="@+id/sleepCharts"
+            android:layout_gravity="right|top"
+            android:background="#82d65e5e"
+            android:textColor="#ffffff"
+            android:textSize="35dp" />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="40dp"
+        >
+         <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tibei" />
+
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:background="@drawable/yinying"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="30dp" />
+
+        <TextView
+            android:layout_width="228dp"
+            android:layout_height="83dp"
+            android:text="是否踢被："
+            android:textSize="45dp"
+            android:textColor="#EEECE1"
+            android:layout_gravity="center_horizontal|bottom"
+            />
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="80dp"
+            android:text="否"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:textColor="#EEECE1"
+            android:id="@+id/tibeitext"
+            android:layout_gravity="right|bottom" />
+
+        <Switch
+            android:layout_width="204dp"
+            android:layout_height="68dp"
+            android:id="@+id/switch2"
+            android:layout_gravity="right|top"
+            android:checked="false"
+            android:textOn="开"
+            android:textOff="关"
+            android:text="踢被监测"
+            android:textSize="35dp" />
+
+
+    </FrameLayout>
+</LinearLayout>

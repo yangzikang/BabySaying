@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <ImageView android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:text="搜索蓝牙"
+        android:id="@+id/enter"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:textColor="@color/common_signin_btn_light_text_pressed"
+        android:background="@drawable/button_style_blue" />
+</FrameLayout>
